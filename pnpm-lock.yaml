@@ -5,6 +5,7 @@ specifiers:
   '@tsconfig/svelte': ^3.0.0
   svelte: ^3.52.0
   svelte-check: ^2.9.2
+  svelte-intersection-observer: ^0.10.0
   svelte-preprocess: ^4.10.7
   tslib: ^2.4.0
   typescript: ^4.6.4
@@ -15,6 +16,7 @@ devDependencies:
   '@tsconfig/svelte': 3.0.0
   svelte: 3.53.1
   svelte-check: 2.9.2_svelte@3.53.1
+  svelte-intersection-observer: 0.10.0
   svelte-preprocess: 4.10.7_f4bsrsgtzvlkrtbz2ig7nipio4
   tslib: 2.4.1
   typescript: 4.8.4
@@ -776,6 +778,10 @@ packages:
       svelte: '>=3.19.0'
     dependencies:
       svelte: 3.53.1
+    dev: true
+
+  /svelte-intersection-observer/0.10.0:
+    resolution: {integrity: sha512-GdOTMSrRpoBciMe+NbocsHOBvqKJ5OiL5H8Jz4mBoDGHba9VOI4oGeXAmMOmh8mi5gq95+0b0DVI+6alcQ7TCA==}
     dev: true
 
   /svelte-preprocess/4.10.7_f4bsrsgtzvlkrtbz2ig7nipio4:

@@ -1,18 +1,13 @@
 <script lang="ts">
-    import { onMount } from "svelte";
-
+    import IntersectionObserver from "svelte-intersection-observer";
+    import { fade } from "svelte/transition";
 
     export let title: string = "Default Title";
     export let body: string = null;
     export let graphicPath: string = null;
     export let slideNum: number;
 
-    export let observer: IntersectionObserver;
-
-    onMount(() => {
-        let hidden = document.querySelector(`.appear-${slideNum}`);
-        observer.observe(hidden);
-    });
+    let node;
 </script>
 
 <section>
@@ -24,7 +19,12 @@
     {#if graphicPath}
         <p>{graphicPath}</p>
     {/if}
-    <p class="hidden appear-{slideNum}">Hello</p>
+
+    <IntersectionObserver element={node} let:intersecting threshold={1.0}>
+        <div bind:this={node}>
+            <p style="opacity: {intersecting ? '1.0' : '0.0'}">Hello World!</p>
+        </div>
+    </IntersectionObserver>
 </section>
 
 <style>
@@ -43,8 +43,7 @@
         margin: 0;
     }
 
-    .hidden {
-        opacity: 0;
+    p {
         transition-duration: 3s;
     }
 </style>
