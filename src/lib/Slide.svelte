@@ -11,7 +11,7 @@
 </script>
 
 <section>
-    <p>Slide num: {slideNum}</p>
+    <!-- <p>Slide num: {slideNum}</p> -->
     <h2>{title}</h2>
     {#if body}
         <p>{body}</p>
