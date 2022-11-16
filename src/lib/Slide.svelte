@@ -28,7 +28,7 @@
     </div>
 </section>
 
-<style>
+<!-- <style>
     section {
         min-width: 96%;
         min-height: 90%;
@@ -70,4 +70,4 @@
     .right-side {
         border: 2px solid red;
     }
-</style>
+</style> -->

@@ -9,10 +9,15 @@
 </script>
 
 <main>
-  <TitleSlide />
+
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+
+  <!-- <TitleSlide />
 
   <Slide slideNum={0} graphicPath="somehwere/over/there/"/>
-  <Slide slideNum={1} graphicPath="somehwere/under/where/"/>
+  <Slide slideNum={1} graphicPath="somehwere/under/where/"/> -->
 
   <!-- {#each slideIndices as i}
     <Slide slideNum={i+1}/>
