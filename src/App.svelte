@@ -23,6 +23,8 @@
   main {
     overflow-x: scroll;
     display: flex;
+    flex-direction: row;
     margin: 0;
+    padding: 2.2em;
   }
 </style>

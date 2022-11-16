@@ -4,9 +4,17 @@
   line-height: 24px;
   font-weight: 400;
 
+
+  --main-bg-color: #f4e0cb;
+  --main-accent-color: #9b4c38;
+  --main-dark-color: #413333;
+
+  --main-txt-color: rgb(15 23 42);
+
+
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
