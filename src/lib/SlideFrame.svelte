@@ -1,32 +1,6 @@
-<script lang="ts">
-    import SlideFrame from "./SlideFrame.svelte";
-    import Text from "./Text.svelte";
-
-    export let title: string = "Default Title";
-    export let graphicPath: string = null;
-    export let slideNum: number;
-
-    let text;
-    let graphic;
-</script>
-
-<SlideFrame>
-    <!-- <p>Slide num: {slideNum}</p> -->
-    <h2>{title}</h2>
-
-    <div class="">
-        <div class="">
-            <Text>
-                <p>{graphicPath}</p>
-            </Text>
-        </div>
-        <div class="">
-            <Text>
-                <p>Hello World!</p>
-            </Text>
-        </div>
-    </div>
-</SlideFrame>
+<section class="m-4 p-10 text-center w-full">
+    <slot />
+</section>
 
 <!-- <style>
     section {
