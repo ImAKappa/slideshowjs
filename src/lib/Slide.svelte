@@ -2,17 +2,17 @@
     import SlideFrame from "./SlideFrame.svelte";
     import Fade from "./Fade.svelte";
 
-    export let title: string = "Default Title";
-    export let graphicPath: string = null;
-    export let videoPath: string = null;
     export let slideNum: number;
-
-    export let caption = "Default caption"
+    export let title: string = "Default Title";
+    export let svgPath: string = null;
+    export let imagePath: string = null;
+    export let videoPath: string = null;
+    export let caption = null;
 </script>
 
 <SlideFrame>
     <!-- <p>Slide num: {slideNum}</p> -->
-    <h2 class="text-6xl">{title}</h2>
+    <h2 class="text-4xl">{title}</h2>
 
     <div class="flex flex-col justify-around">
         {#if videoPath}
@@ -22,16 +22,21 @@
             </video>
             <p>If video doesn't load, try <a class="text-blue-200 underline" href="{videoPath}" target="_blank">this link</a></p> 
         {/if}
+        {#if svgPath}
+            <p>SVG Here</p>
+        {/if}
+        {#if imagePath}
         <div class="mt-10">
-            <Fade>
-                <img src="{graphicPath}" alt="{graphicPath}">
-            </Fade>
+            <img src="{imagePath}" alt="{imagePath}">
         </div>
+        {/if}
+        {#if caption}
         <div class="text-2xl m-10">
             <Fade>
                 <p>{caption}</p>
             </Fade>
-        </div>
+        </div> 
+        {/if}
     </div>
 </SlideFrame>
 

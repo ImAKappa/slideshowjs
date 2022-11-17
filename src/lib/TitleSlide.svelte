@@ -1,19 +1,26 @@
 <script lang="ts">
     import SlideFrame from "./SlideFrame.svelte";
+    import Walking from "./Walking.svelte";
 
     export let title: string = "Default Title";
     export let subtitle: string = null;
-    export let graphicPath: string = "./title/graphic";
+    export let author: string = null;
 </script>
 
 <SlideFrame>
-    <h1>{title}</h1>
-    {#if subtitle}
-        <p>{subtitle}</p>
-    {/if}
-    {#if graphicPath}
-        <p>{graphicPath}</p>
-    {/if}
+    <!-- <p>Slide num: {slideNum}</p> -->
+    <h1 class="text-6xl">{title}</h1>
+    <h3 class="text-2xl">{subtitle}</h3>
+
+    <div class="flex flex-col justify-around">
+        <div class="w-52">
+            <Walking />
+        </div>
+
+        <div class="flex flex-col justify-around">
+            <p>{author}</p>
+        </div>
+    </div>
 </SlideFrame>
 
 <!-- <style>
