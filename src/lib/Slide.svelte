@@ -26,8 +26,8 @@
             <p>SVG Here</p>
         {/if}
         {#if imagePath}
-        <div class="m-auto max-w-lg">
-            <img width="800" src="{imagePath}" alt="{imagePath}">
+        <div class="m-auto">
+            <img width="400" class="object-scale-down" src="{imagePath}" alt="{imagePath}">
         </div>
         {/if}
         {#if caption}
