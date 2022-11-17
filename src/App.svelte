@@ -6,7 +6,7 @@
   let slideIndices = [...Array(numSlides).keys()];
 </script>
 
-<main class="w-full mx-80 h-screen m-10 text-center overflow-hidden flex items-center">
+<main class="w-full mx-40 h-4/5 text-center overflow-hidden flex items-center drop-shadow-md rounded-lg">
 
   <!-- Slideshow Slider -->
     <!-- Slides -->
