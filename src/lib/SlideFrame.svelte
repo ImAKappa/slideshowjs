@@ -1,4 +1,6 @@
-<section class="snap-start shrink-0 w-full mr-10 bg-white border-r-8 origin-center scale-100">
+<section class="snap-start shrink-0 w-full mr-10 bg-white border-r-8 origin-center scale-100 bg-green-800
+    duration-500 flex flex-col justify-around items-center text-white
+">
     <slot />
 </section>
 

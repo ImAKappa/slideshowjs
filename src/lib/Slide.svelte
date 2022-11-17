@@ -1,29 +1,36 @@
 <script lang="ts">
     import SlideFrame from "./SlideFrame.svelte";
-    import Text from "./Text.svelte";
+    import Fade from "./Fade.svelte";
 
     export let title: string = "Default Title";
     export let graphicPath: string = null;
+    export let videoPath: string = null;
     export let slideNum: number;
 
-    let text;
-    let graphic;
+    export let caption = "Default caption"
 </script>
 
 <SlideFrame>
     <!-- <p>Slide num: {slideNum}</p> -->
-    <h2>{title}</h2>
+    <h2 class="text-6xl">{title}</h2>
 
-    <div class="">
-        <div class="">
-            <Text>
-                <p>{graphicPath}</p>
-            </Text>
+    <div class="flex flex-col justify-around">
+        {#if videoPath}
+            <video controls width="250">
+                <source src="{videoPath}" type="video/webm">
+                <source src="{videoPath}" type="video/mp4">
+            </video>
+            <p>If video doesn't load, try <a class="text-blue-200 underline" href="{videoPath}" target="_blank">this link</a></p> 
+        {/if}
+        <div class="mt-10">
+            <Fade>
+                <img src="{graphicPath}" alt="{graphicPath}">
+            </Fade>
         </div>
-        <div class="">
-            <Text>
-                <p>Hello World!</p>
-            </Text>
+        <div class="text-2xl m-10">
+            <Fade>
+                <p>{caption}</p>
+            </Fade>
         </div>
     </div>
 </SlideFrame>

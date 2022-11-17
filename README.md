@@ -2,6 +2,12 @@
 
 A simple programmable slideshow application in Svelte.
 
+## Todo:
+
+- [ ] Include images
+- [ ] Line drawing
+
+
 ## Features:
 
 Slide Types:
