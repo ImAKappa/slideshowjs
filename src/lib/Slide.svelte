@@ -12,7 +12,7 @@
 
 <SlideFrame>
     <!-- <p>Slide num: {slideNum}</p> -->
-    <h2 class="text-4xl">{title}</h2>
+    <h2 class="text-4xl duration-500 hover:-translate-y-2 hover:text-5xl duration-500 hover:text-orange-500">{title}</h2>
 
     <div class="flex flex-col justify-around">
         {#if videoPath}
@@ -26,14 +26,14 @@
             <p>SVG Here</p>
         {/if}
         {#if imagePath}
-        <div class="mt-10">
-            <img src="{imagePath}" alt="{imagePath}">
+        <div class="m-auto max-w-lg">
+            <img width="800" src="{imagePath}" alt="{imagePath}">
         </div>
         {/if}
         {#if caption}
         <div class="text-2xl m-10">
             <Fade>
-                <p>{caption}</p>
+                <p class="duration-500 hover:text-orange-400 hover:text-3xl">{caption}</p>
             </Fade>
         </div> 
         {/if}

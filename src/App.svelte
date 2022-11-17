@@ -12,8 +12,14 @@
   }
 
   let slides: SlideType[] = [
-    {slideNum: 0, title: "My Passion: Exploring", svgPath: "./svg/Man_walking_icon.svg", caption: "By Alex Kappen"},
-    {slideNum: 1, title: "Getting Into Trouble", caption: "TL;DR: Accidentally trapped myself by a highway, jumped a fence, ripped my shirt, while carrying a slightly stale full pizza from Papa John's, to catch a bus to my friend's place"}
+    {slideNum: 0, title: "Exploring is Beautiful", imagePath: "/imgs/humber-pond-2022-10-31.jpg", caption: "Nice and quiet (Humber pond. Oct, 2022)"},
+    {slideNum: 1, title: "Beautiful", imagePath: "/imgs/cool-tree.jpg", caption: "Cool Roots. (Cootes paradise. Jan, 2021)"},
+    {slideNum: 2, title: "Exploring is Ugly", imagePath: "/imgs/shopping-cart-2022-04-17.jpg", caption: "We Live in A Society. (Brampton pond. Apr, 2022)"},
+    {slideNum: 3, title: "Exploring is Intriguing", imagePath: "/imgs/forbidden-hottub.jpg", caption: "Forbidden Hot Tub. (Brampton pond. Sep, 2022)"},
+    {slideNum: 4, title: "Intriguing", imagePath: "/imgs/humber-pumpkins-2022-10-31.jpg", caption: "Pumpkin Party. (Humber pond. Oct, 2022)"},
+    {slideNum: 5, title: "Intriguing", imagePath: "/img/weird-spiderweb-2021-08-28.jpg", caption: "Weird, Wide, Web. (Aug, 2021)"},
+    {slideNum: 6, title: "Intriguing", videoPath: "https://scontent-ord5-1.cdninstagram.com/v/t50.2886-16/277055443_254175773500571_2641974294780699781_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5jYXJvdXNlbF9pdGVtLmRlZmF1bHQiLCJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSJ9&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_cat=111&_nc_ohc=lCWO6EOBdJkAX90tGiX&edm=ALQROFkBAAAA&vs=17979531712492563_303780546&_nc_vs=HBksFQAYJEdOT0hneENicExEb0tfY0FBSVhrSFpLZkxhb2tia1lMQUFBRhUAAsgBABUAGCRHQWR3Z3hDOGRhRWhyZDBFQUI3NjNRZ0hsbWgyYmtZTEFBQUYVAgLIAQAoABgAGwGIB3VzZV9vaWwBMBUAACamydXJwa%2F3PxUCKAJDMywXQENMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAde4HAA%3D%3D&_nc_rid=a96ccc9f0c&ccb=7-5&oh=00_AfCd1ce6cGqOiYkS1USOPdrbVlnujWlmt-yVGZGJ_cWyzw&oe=63778BAA&_nc_sid=30a2ef", caption: "Basement Surprise. (Hamilton. Mar, 2022)"},
+    {slideNum: 7, title: "Exploring Isn't Always Safe...", imagePath: "/imgs/jumping-fences-2022-04-15.jpg", caption: "TL;DR: Accidentally trapped myself by a highway, jumped a fence, and ripped my shirt - while carrying a slightly stale, but delicious, 12\" pizza from Papa John's - so I could catch a bus to my friend's place. (Hamilton. Apr, 2022)"}
   ];
 </script>
 

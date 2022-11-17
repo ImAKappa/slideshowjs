@@ -9,8 +9,8 @@
 
 <SlideFrame>
     <!-- <p>Slide num: {slideNum}</p> -->
-    <h1 class="text-6xl duration-500 hover:-translate-y-2 hover:text-7xl">{title}</h1>
-    <h3 class="text-2xl">{subtitle}</h3>
+    <h1 class="text-6xl duration-500 hover:-translate-y-2 hover:text-7xl hover:text-orange-500">{title}</h1>
+    <h3 class="text-2xl duration-500 hover:text-orange-500">{subtitle}</h3>
 
     <div class="flex flex-col justify-around">
         <div class="w-52">
@@ -18,7 +18,7 @@
         </div>
 
         <div class="flex flex-col justify-around">
-            <p>{author}</p>
+            <p class="duration-500 hover:text-orange-500">{author}</p>
         </div>
     </div>
 </SlideFrame>
