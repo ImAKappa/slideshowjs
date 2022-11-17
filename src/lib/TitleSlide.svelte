@@ -9,7 +9,7 @@
 
 <SlideFrame>
     <!-- <p>Slide num: {slideNum}</p> -->
-    <h1 class="text-6xl">{title}</h1>
+    <h1 class="text-6xl duration-500 hover:-translate-y-2 hover:text-7xl">{title}</h1>
     <h3 class="text-2xl">{subtitle}</h3>
 
     <div class="flex flex-col justify-around">

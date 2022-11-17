@@ -22,7 +22,7 @@
   <!-- Slideshow Slider -->
     <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth h-full">
       <!-- Title Slide -->
-      <TitleSlide title={"Exploring"} subtitle={"Passion Presentation"} author={"Alex Kappen"}/>
+      <TitleSlide title={"Exploring"} subtitle={"Passion Presentation"} author={"Alex Kappen, Nov 2022"}/>
       <!-- Slides -->
       {#each slides as slide (slide.slideNum)}
         <Slide {...slide}/>
