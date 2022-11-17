@@ -1,4 +1,4 @@
-<section class="m-4 p-10 text-center w-full">
+<section class="snap-start shrink-0 w-full mr-10 bg-white border-r-8 origin-center scale-100">
     <slot />
 </section>
 

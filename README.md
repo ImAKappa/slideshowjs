@@ -18,3 +18,7 @@ Slide Events:
   * Fade in text/graphic
 * OnExit
   * Fade out text/graphic
+
+## Inspiration:
+
+[CSS-Only Carousel](https://css-tricks.com/css-only-carousel/)
